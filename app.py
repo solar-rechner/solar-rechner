@@ -47,3 +47,6 @@ def pv_calculation():
         return render_template("result.html").format(stromkosten_o=stromkosten_ohne, stromkosten_m=stromkosten_mit)
 
     return render_template("index.html")
+
+if __name__ == '__main__':
+    app.run()
