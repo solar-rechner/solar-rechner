@@ -5,7 +5,7 @@ def calculation(strom, pv, bat, stromkosten, zins, laufzeit):
     invest_bat =  1306.51
     invest_ac =  3585.00
 
-    df = pd.read_csv("/home/giacobana/mysite/pv_data.csv", sep=';')
+    df = pd.read_csv("data/pv_data.csv", sep=';')
 
     eigenverbrauch = df["Eigenverbrauch (%)"][(df["Stromverbrauch"] == strom) & (df["PV-Leistung"] == pv) & (df["Batterie"] == bat)].values[0]
     autarkie = df["Autarkie"][(df["Stromverbrauch"] == strom) & (df["PV-Leistung"] == pv) & (df["Batterie"] == bat)].values[0]
