@@ -13,7 +13,7 @@ body {
 }
 
 .child{
-    width: 45%;
+    width: 40%;
 }
 
 .button {
@@ -27,4 +27,8 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px
+}
+
+i {
+    font-style: italic;
 }

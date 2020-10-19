@@ -12,10 +12,20 @@
     <body>
         <div class="container">
             <div class="child">
-                <p>Monatliche Stromkosten ohne Photovoltaikanlage <strong>{stromkosten_o:.2f}€</strong></p>
+                <h2>Monatliche Stromkosten <u>ohne Photovoltaikanlage</u> <strong style="color:#D99533">{stromkosten_o:.2f}€</strong></h2>
             </div>
             <div class="child">
-                <p>Monatliche Stromkosten mit Photovoltaikanlage <strong>{stromkosten_m:.2f}€</strong></p>
+                <h2>Monatliche Stromkosten <u>mit Photovoltaikanlage</u> <strong style="color:#D99533">{stromkosten_m:.2f}€</strong></h2>
+                <p>Die Eigenverbrauchsquote der PV-Anlage liegt bei: <strong>{eigenverbrauch:.2f}%</strong></p>
+                <p>Durch die PV-Anlage ergibt sich eine Autarkie von: <strong>{autarkie:.2f}%</strong></p>
+                <div>
+                    <p><strong>Berechnung der monatlichen Kosten:</strong></p>
+                    <ol>
+                        <li>Finanzierung der PV-Anlage:          <i>{finanzierung:.2f}</i></li>
+                        <li>Kosten für den Resttrombezug:      <i>+ {kosten_reststrom:.2f}</i></li>
+                        <li>Gutschrift der Einspeisevergütung: <i>- {einspeiseverguetung:.2f}</i></li>
+                    </ol>
+                </div>
             </div>
         </div>
         <a href="/"><button class="button">Neue Berechnung</button></a>
